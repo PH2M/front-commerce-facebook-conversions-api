@@ -1,0 +1,4 @@
+extend type Mutation {
+  facebookViewContentTracking(title: String, pathname: String): Boolean
+  facebookEventTracking(data: [KeyValueInput]): Boolean
+}

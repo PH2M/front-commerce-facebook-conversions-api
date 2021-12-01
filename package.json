@@ -1,0 +1,21 @@
+{
+  "name": "front-commerce-facebook-conversions-api",
+  "version": "1.0.0",
+  "description": "Front-Commerce module for Facebook conversions API implementation",
+  "author": "PH2M",
+  "original-author": {
+    "name": "Bastien Lamamy",
+    "company": "PH2M"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PH2M/front-commerce-facebook-conversions-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PH2M/front-commerce-facebook-conversions-api/issues"
+  },
+  "keywords": [
+    "front-commerce",
+    "Facebook Conversions API"
+  ]
+}
