@@ -2,19 +2,21 @@ Front-Commerce Facebook conversions API
 -------
 Implement the Facebook conversions API to your Front-Commerce project https://www.facebook.com/business/help/2041148702652965?id=818859032317965
 
-![Latest version](https://img.shields.io/badge/latest-v1.0.0-red.svg)
+![Latest version](https://img.shields.io/badge/latest-v1.0.1-red.svg)
 
 Requirements
 ------------
 ❔ Front-Commerce > 2.10.0: Never tested but it should work
+
 ✅ Front-Commerce = 2.10.0
+
 ❔ Front-Commerce < 2.10.0: Never tested but it should work
 
 Installation & Configuration
 ------------
 1. Install the latest stable version for the module
 ```
-npm install ph2m/front-commerce-facebook-conversions-api#1.0.0
+npm install ph2m/front-commerce-facebook-conversions-api#1.0.1
 ```
 2. Generate your Access Token from Facebook Buisness account: https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#via-events-manager
 3. Add your own configuration on the `.env` file
@@ -28,7 +30,7 @@ npm install ph2m/front-commerce-facebook-conversions-api#1.0.0
 ```
  modules: [
     ...
-    "./node_modules/front-commerce-facebook-conversions-api/facebook-conversions-api",
+    "./node_modules/front-commerce-facebook-conversions-api",
   ],
   serverModules: [
     ...
@@ -41,7 +43,7 @@ npm install ph2m/front-commerce-facebook-conversions-api#1.0.0
     ...
     {
       name: "FrontCommerceConversionsApi",
-      path: "./node_modules/front-commerce-facebook-conversions-api/facebook-conversions-api/web",
+      path: "./node_modules/front-commerce-facebook-conversions-api/web",
     },
   ],
 ```
