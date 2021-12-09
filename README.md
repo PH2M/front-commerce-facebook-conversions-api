@@ -4,13 +4,15 @@ Implement the Facebook conversions API to your Front-Commerce project https://ww
 
 ![Latest version](https://img.shields.io/badge/latest-v1.0.1-red.svg)
 
-Requirements
+Supported Version
 ------------
-❔ Front-Commerce > 2.10.0: Never tested but it should work
+✅ Front-Commerce = 2.2.0
+
+✅ Front-Commerce = 2.6.0
 
 ✅ Front-Commerce = 2.10.0
 
-❔ Front-Commerce < 2.10.0: Never tested but it should work
+❔ Other version: Never tested but it should work
 
 Installation & Configuration
 ------------
@@ -18,13 +20,13 @@ Installation & Configuration
 ```
 npm install ph2m/front-commerce-facebook-conversions-api#1.0.1
 ```
-2. Generate your Access Token from Facebook Buisness account: https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#via-events-manager
+2. Generate your Access Token from Facebook Business account: https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#via-events-manager
 3. Add your own configuration on the `.env` file
 ```
 [Required] FRONT_COMMERCE_FACEBOOK_CONVERSIONS_API_TOKEN => Your Facebook conversions API token
 [Required] FRONT_COMMERCE_FACEBOOK_CONVERSIONS_API_PIXEL => Your Facebook pixel ID
-[Optionnal] FRONT_COMMERCE_FACEBOOK_CONVERSIONS_API_TEST_EVENT_CODE => Your Facebook API test event code, do not set for production mode
-[Optionnal] FRONT_COMMERCE_FACEBOOK_CONVERSIONS_API_VERSION => Facebook API version, by default 12.0
+[Optional] FRONT_COMMERCE_FACEBOOK_CONVERSIONS_API_TEST_EVENT_CODE => Your Facebook API test event code, do not set for production mode
+[Optional] FRONT_COMMERCE_FACEBOOK_CONVERSIONS_API_VERSION => Facebook API version, by default 12.0
 ```
 4. Load the module on `.front-commerce.js` file
 ```
@@ -50,7 +52,7 @@ npm install ph2m/front-commerce-facebook-conversions-api#1.0.1
 
 How it works
 ------------
-Use the track Event and track Page of Front-Commerce for trigger an mutation who can sent the current track to the conversions API. 
+Use the track Event and track Page of Front-Commerce to trigger a mutation that can send the current track to the conversions API.
 
 
 Licence
