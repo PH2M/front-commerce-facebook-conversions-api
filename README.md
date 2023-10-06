@@ -12,6 +12,8 @@ Supported Version
 
 ✅ Front-Commerce = 2.10.0
 
+✅ Front-Commerce = 2.26.0
+
 ❔ Other version: Never tested but it should work
 
 Installation & Configuration
@@ -58,3 +60,11 @@ Use the track Event and track Page of Front-Commerce to trigger a mutation that 
 Licence
 -------
 [GNU General Public License, version 3 (GPLv3)](http://opensource.org/licenses/gpl-3.0)
+
+
+Changelog
+-------
+
+1.0.2: 
+- Send fbp and fbc to conversion API
+- Support Front-Commerce version 2.26

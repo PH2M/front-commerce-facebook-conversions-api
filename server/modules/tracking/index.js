@@ -15,7 +15,7 @@ export default {
   contextEnhancer: ({ req }) => {
     const axiosInstance = makeAxiosInstanceForFacebookConversionsApi(req);
     return {
-      FacebookConversionsApi: FacebookConversionsApiLoader()(axiosInstance),
+      FacebookConversionsApi: FacebookConversionsApiLoader(req)(axiosInstance),
     };
   },
 };

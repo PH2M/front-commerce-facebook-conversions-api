@@ -55,7 +55,10 @@ const trackEvent = (analyticsReady) => (event, properties) => {
   });
 };
 
+export let previousTrackedPageTitle = null;
+
 const trackPage = (analyticsReady) => (title) => {
+  previousTrackedPageTitle = title;
   trackViewContentForFacebookConversionsApi(title);
   analyticsReady.then((analytics) => {
     if (!analytics) return;
